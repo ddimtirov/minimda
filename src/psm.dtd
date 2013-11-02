@@ -1,0 +1,45 @@
+<!ELEMENT platformSpecificModel (interface|class)*>
+<!ATTLIST platformSpecificModel
+    type CDATA #REQUIRED
+    src CDATA #REQUIRED>
+<!ELEMENT implements (#PCDATA)>
+<!ATTLIST implements
+    typename CDATA #REQUIRED
+    metatype CDATA #REQUIRED>
+<!ELEMENT attribute (#PCDATA)>
+<!ATTLIST attribute
+    metatype CDATA #REQUIRED
+    name CDATA #REQUIRED
+    typename CDATA #REQUIRED
+    visibility CDATA #REQUIRED>
+<!ELEMENT extends (#PCDATA)>
+<!ATTLIST extends
+    metatype CDATA #REQUIRED
+    typename CDATA #REQUIRED>
+<!ELEMENT class (extends|operation|implements|association|attribute)*>
+<!ATTLIST class
+    name CDATA #REQUIRED>
+<!ELEMENT interface (operation)*>
+<!ATTLIST interface
+    name CDATA #REQUIRED>
+<!ELEMENT generated (platformSpecificModel)*>
+<!ELEMENT association (#PCDATA)>
+<!ATTLIST association
+    maxoccurs CDATA #REQUIRED
+    metatype CDATA #REQUIRED
+    minoccurs CDATA #REQUIRED
+    navigable CDATA #REQUIRED
+    ordering CDATA #IMPLIED
+    role CDATA #IMPLIED
+    typename CDATA #REQUIRED>
+<!ELEMENT parameter (#PCDATA)>
+<!ATTLIST parameter
+    metatype CDATA #REQUIRED
+    name CDATA #REQUIRED
+    typename CDATA #REQUIRED>
+<!ELEMENT operation (parameter)*>
+<!ATTLIST operation
+    metatype CDATA #REQUIRED
+    name CDATA #REQUIRED
+    typename CDATA #REQUIRED
+    visibility CDATA #REQUIRED>

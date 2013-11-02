@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Graphics Editor Model</title>
+        <link type="text/css" rel="stylesheet" href="xmi.css" />
+    </head>
+    <body>
+        <div align="center">
+            <h1>Graphics Editor Model</h1>
+        </div>
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="interface-title">Interface</td>
+                    <td class="interface-name">
+                        <a name="Figure">Figure</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Realizations:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#ClosedFigure" class="classifier">ClosedFigure</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">display</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">rotate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td valign="top" class="parameter-heading">parameters:</td>
+                                            <td align="right" bgcolor="#ffffff">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right" width="85%">
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <a href="#Point" class="classifier">Point</a>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">center</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">angle</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">translate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td valign="top" class="parameter-heading">parameters:</td>
+                                            <td align="right" bgcolor="#ffffff">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right" width="85%">
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">x</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">y</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Circle">Circle</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Supertypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Ellipse" class="classifier">Ellipse</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">perimeter</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="ClosedFigure">ClosedFigure</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Specifications:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Figure" class="interface">Figure</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" width="20%">Subtypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Ellipse" class="classifier">Ellipse</a>,  <a href="#Polygon" class="classifier">Polygon</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Associations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">properties</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td class="feature-detail">
+                                                <a href="#Color" class="classifier">Color</a>
+                                            </td>
+                                            <td class="feature-detail">
+                                                <span class="property-name">Rolename: </span>fillColor<br />
+                                                <span class="property-name">Multiplicity: </span>1<br />
+                                                <span class="property-name">Navigable: </span>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td class="feature-detail">
+                                                <a href="#Color" class="classifier">Color</a>
+                                            </td>
+                                            <td class="feature-detail">
+                                                <span class="property-name">Rolename: </span>lineColor<br />
+                                                <span class="property-name">Multiplicity: </span>1<br />
+                                                <span class="property-name">Navigable: </span>true</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Color">Color</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" colspan="3">Associations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">properties</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td class="feature-detail">
+                                                <a href="#ClosedFigure" class="classifier">ClosedFigure</a>
+                                            </td>
+                                            <td class="feature-detail">
+                                                <span class="property-name">Rolename: </span>(none)<br />
+                                                <span class="property-name">Multiplicity: </span>1<br />
+                                                <span class="property-name">Navigable: </span>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td class="feature-detail">
+                                                <a href="#ClosedFigure" class="classifier">ClosedFigure</a>
+                                            </td>
+                                            <td class="feature-detail">
+                                                <span class="property-name">Rolename: </span>(none)<br />
+                                                <span class="property-name">Multiplicity: </span>1<br />
+                                                <span class="property-name">Navigable: </span>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">red</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">green</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">blue</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">alpha</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Ellipse">Ellipse</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Supertypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#ClosedFigure" class="classifier">ClosedFigure</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" width="20%">Subtypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Circle" class="classifier">Circle</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <a href="#Point" class="classifier">Point</a>
+                                            </td>
+                                            <td class="feature-detail">focus1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <a href="#Point" class="classifier">Point</a>
+                                            </td>
+                                            <td class="feature-detail">focus2</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">perimeter</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">rotate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td valign="top" class="parameter-heading">parameters:</td>
+                                            <td align="right" bgcolor="#ffffff">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right" width="85%">
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <a href="#Point" class="classifier">Point</a>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">center</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">angle</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">translate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td valign="top" class="parameter-heading">parameters:</td>
+                                            <td align="right" bgcolor="#ffffff">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right" width="85%">
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">x</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">y</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">display</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Point">Point</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" colspan="3">Associations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">properties</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td class="feature-detail">
+                                                <a href="#Polygon" class="classifier">Polygon</a>
+                                            </td>
+                                            <td class="feature-detail">
+                                                <span class="property-name">Rolename: </span>(none)<br />
+                                                <span class="property-name">Multiplicity: </span>1<br />
+                                                <span class="property-name">Navigable: </span>false</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">x</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">y</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">translate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td valign="top" class="parameter-heading">parameters:</td>
+                                            <td align="right" bgcolor="#ffffff">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right" width="85%">
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">x</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">y</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Polygon">Polygon</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Supertypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#ClosedFigure" class="classifier">ClosedFigure</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" width="20%">Subtypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Triangle" class="classifier">Triangle</a>,  <a href="#Quadrangle" class="classifier">Quadrangle</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Associations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">properties</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td class="feature-detail">
+                                                <a href="#Point" class="classifier">Point</a>
+                                            </td>
+                                            <td class="feature-detail">
+                                                <span class="property-name">Rolename: </span>vertices<br />
+                                                <span class="property-name">Multiplicity: </span>3..*<br />
+                                                <span class="property-name">Navigable: </span>true<br />
+                                                <span class="property-name">Ordering: </span>ordered</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">perimeter</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">rotate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td valign="top" class="parameter-heading">parameters:</td>
+                                            <td align="right" bgcolor="#ffffff">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right" width="85%">
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <a href="#Point" class="classifier">Point</a>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">center</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">angle</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">translate</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">&nbsp;</td>
+                                            <td valign="top" class="parameter-heading">parameters:</td>
+                                            <td align="right" bgcolor="#ffffff">
+                                                <table border="0" cellspacing="0" cellpadding="0" align="right" width="85%">
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">x</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="45%" class="feature-detail">
+                                                            <span class="datatype">float</span>
+                                                        </td>
+                                                        <td width="55%" class="feature-detail">y</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">void</span>
+                                            </td>
+                                            <td class="feature-detail">display</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Quadrangle">Quadrangle</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Supertypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Polygon" class="classifier">Polygon</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" width="20%">Subtypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Rectangle" class="classifier">Rectangle</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Rectangle">Rectangle</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Supertypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Quadrangle" class="classifier">Quadrangle</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" width="20%">Subtypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Square" class="classifier">Square</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">side1</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">private</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">side2</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">perimeter</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Square">Square</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Supertypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Rectangle" class="classifier">Rectangle</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">perimeter</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+        <div align="center">
+            <table cellpadding="2" width="75%" border="1">
+                <tr>
+                    <td width="20%" class="class-title">Class</td>
+                    <td class="class-name">
+                        <a name="Triangle">Triangle</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                            <tr>
+                                <td bgcolor="#cacaca" colspan="2">
+                                    <table cellspacing="1" cellpadding="3" border="0" width="100%">
+                                        <tr>
+                                            <td class="info-title" width="20%">Supertypes:</td>
+                                            <td class="info" colspan="2">
+                                                <a href="#Polygon" class="classifier">Polygon</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Attributes:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">type</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info-title" colspan="3">Operations:</td>
+                                        </tr>
+                                        <tr>
+                                            <td width="20%" class="feature-heading">visibility</td>
+                                            <td width="25%" class="feature-heading">return</td>
+                                            <td width="55%" class="feature-heading">name</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="feature-detail">public</td>
+                                            <td class="feature-detail">
+                                                <span class="datatype">float</span>
+                                            </td>
+                                            <td class="feature-detail">perimeter</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <br />
+    </body>
+</html>

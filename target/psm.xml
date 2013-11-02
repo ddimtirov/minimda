@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    
+        
+    
+    <!DOCTYPE generated SYSTEM "psm.dtd">
+<generated>
+<platformSpecificModel type="Hibernate3" src="Graphics Editor Model">
+<interface name="Figure">
+<operation visibility="public" name="display" typename="void" metatype="primitive"/>
+<operation visibility="public" name="rotate" typename="void" metatype="primitive">
+<parameter name="center" typename="Point" metatype="class"/>
+<parameter name="angle" typename="float" metatype="primitive"/>
+</operation>
+<operation visibility="public" name="translate" typename="void" metatype="primitive">
+<parameter name="x" typename="float" metatype="primitive"/>
+<parameter name="y" typename="float" metatype="primitive"/>
+</operation>
+</interface>
+<class name="Circle">
+<extends typename="Ellipse" metatype="class"/>
+<operation visibility="public" name="perimeter" typename="float" metatype="primitive"/>
+</class>
+<class name="ClosedFigure">
+<implements typename="Figure" metatype="interface"/>
+<association role="fillColor" navigable="true" typename="Color" metatype="class" minoccurs="1" maxoccurs="1"/>
+<association role="lineColor" navigable="true" typename="Color" metatype="class" minoccurs="1" maxoccurs="1"/>
+</class>
+<class name="Color">
+<attribute visibility="private" name="red" typename="float" metatype="primitive"/>
+<attribute visibility="private" name="green" typename="float" metatype="primitive"/>
+<attribute visibility="private" name="blue" typename="float" metatype="primitive"/>
+<attribute visibility="private" name="alpha" typename="float" metatype="primitive"/>
+<association navigable="false" typename="ClosedFigure" metatype="class" minoccurs="1" maxoccurs="1"/>
+<association navigable="false" typename="ClosedFigure" metatype="class" minoccurs="1" maxoccurs="1"/>
+</class>
+<class name="Ellipse">
+<extends typename="ClosedFigure" metatype="class"/>
+<attribute visibility="private" name="focus1" typename="Point" metatype="class"/>
+<attribute visibility="private" name="focus2" typename="Point" metatype="class"/>
+<operation visibility="public" name="perimeter" typename="float" metatype="primitive"/>
+<operation visibility="public" name="rotate" typename="void" metatype="primitive">
+<parameter name="center" typename="Point" metatype="class"/>
+<parameter name="angle" typename="float" metatype="primitive"/>
+</operation>
+<operation visibility="public" name="translate" typename="void" metatype="primitive">
+<parameter name="x" typename="float" metatype="primitive"/>
+<parameter name="y" typename="float" metatype="primitive"/>
+</operation>
+<operation visibility="public" name="display" typename="void" metatype="primitive"/>
+</class>
+<class name="Point">
+<attribute visibility="private" name="x" typename="float" metatype="primitive"/>
+<attribute visibility="private" name="y" typename="float" metatype="primitive"/>
+<operation visibility="public" name="translate" typename="void" metatype="primitive">
+<parameter name="x" typename="float" metatype="primitive"/>
+<parameter name="y" typename="float" metatype="primitive"/>
+</operation>
+<association navigable="false" typename="Polygon" metatype="class" minoccurs="1" maxoccurs="1"/>
+</class>
+<class name="Polygon">
+<extends typename="ClosedFigure" metatype="class"/>
+<operation visibility="public" name="perimeter" typename="float" metatype="primitive"/>
+<operation visibility="public" name="rotate" typename="void" metatype="primitive">
+<parameter name="center" typename="Point" metatype="class"/>
+<parameter name="angle" typename="float" metatype="primitive"/>
+</operation>
+<operation visibility="public" name="translate" typename="void" metatype="primitive">
+<parameter name="x" typename="float" metatype="primitive"/>
+<parameter name="y" typename="float" metatype="primitive"/>
+</operation>
+<operation visibility="public" name="display" typename="void" metatype="primitive"/>
+<association role="vertices" navigable="true" ordering="ordered" typename="Point" metatype="class" minoccurs="3" maxoccurs="*"/>
+</class>
+<class name="Quadrangle">
+<extends typename="Polygon" metatype="class"/>
+</class>
+<class name="Rectangle">
+<extends typename="Quadrangle" metatype="class"/>
+<attribute visibility="private" name="side1" typename="float" metatype="primitive"/>
+<attribute visibility="private" name="side2" typename="float" metatype="primitive"/>
+<operation visibility="public" name="perimeter" typename="float" metatype="primitive"/>
+</class>
+<class name="Square">
+<extends typename="Rectangle" metatype="class"/>
+<operation visibility="public" name="perimeter" typename="float" metatype="primitive"/>
+</class>
+<class name="Triangle">
+<extends typename="Polygon" metatype="class"/>
+<operation visibility="public" name="perimeter" typename="float" metatype="primitive"/>
+</class>
+</platformSpecificModel>
+</generated>
